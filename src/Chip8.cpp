@@ -53,8 +53,8 @@ void Chip8::LoadROM(char const* filename){
     if (file.is_open()){
 
         // Get size of file and allocate a buffer to hold the contents
-        file.seekg (0, file.end);
-        std::streampos size = file.tellg();
+        file.seekg (0, file.end); //tellg() isn't reliable to get size of the file try better approach that is why we first go to the end (file.end)
+        std::streampos size = file.tellg(); 
         char* buffer = new char[size];
 
         // Go back to the beginning of the file and fill the buffer
