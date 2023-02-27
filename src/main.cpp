@@ -3,9 +3,7 @@
 #include "../include/Chip8.hpp"
 
 int main()
-{
-    summer();
-    int x = 1;
-    std::cout <<"\nGeek\n" << x ;
+{   
+    summer("D:\\CPPWORKSPACE\\c8Emu\\CMakeLists.txt");
     return 0;
 }
