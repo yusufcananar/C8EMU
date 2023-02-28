@@ -2,6 +2,7 @@
 
 #include <cstdint>
 
+
 void summer(char const*);
 
 class Chip8 {
@@ -21,5 +22,8 @@ class Chip8 {
         uint16_t opcode; //34 opcodes
 
         void LoadROM(char const* filename);
+
+        std::default_random_engine randGen;
+        std::uniform_int_distribution<uint8_t> randByte;
 
 };
