@@ -6,6 +6,7 @@ void summer(char const*);
 
 class Chip8 {
     public:
+        Chip8();
 
         uint8_t registers[16]{}; // V0 to VF
         uint8_t memory[4096]{}; // 4KBytes of memory
