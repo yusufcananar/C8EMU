@@ -36,8 +36,7 @@ void summer(char const* filename){
 }
 //----------------------------------------------------------------------------------
 
-
-
+//CONSTANTS
 const unsigned int START_ADDRESS = 0x200; // Program memory start adress
 const unsigned int FONTSET_SIZE  = 80;
 const unsigned int FONTSET_START_ADDRESS = 0x50;
